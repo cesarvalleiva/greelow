@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dónde me siento?</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/844f32e7dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading" class="loading ocultar">
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div class="container">
+        <header class="encabezado" id="encabezado">
+            <img src="img/greelow.jpg" alt="Greelow" class="shadow border border-light">
+            <h1>Dónde me siento?</h1>
+            <img src="img/pdtc.jpg" alt="Programá desde tu casa" class="shadow border border-light">
+        </header>
+        <main>
+            <section class="fila">
+                <article class="table" id="table1">
+                    <div class="bancosIzquierda">
+                        <div class="alumno shadow" id="alumno1">😀</div>
+                        <div class="alumno shadow" id="alumno2">😀</div>
+                        <div class="alumno shadow" id="alumno3">😀</div>
+                    </div>
+                    <div class="mesa">
+                        <p>Mesa 1</p>
+                        <i class="fas fa-sort-down icono"></i>
+                    </div>
+                    <div class="bancos">
+                        <div class="alumno shadow" id="alumno4">😀</div>
+                        <div class="alumno shadow" id="alumno5">😀</div>
+                        <div class="alumno shadow" id="alumno6">😀</div>
+                    </div>
+                </article>
+                <article class="table" id="table2">
+                    <div class="bancosIzquierda">
+                        <div class="alumno shadow" id="alumno7">😀</div>
+                        <div class="alumno shadow" id="alumno8">😀</div>
+                        <div class="alumno shadow" id="alumno9">😀</div>
+                    </div>
+                    <div class="mesa">
+                        <p>Mesa 2</p>
+                        <i class="fas fa-sort-down icono"></i>
+                    </div>
+                    <div class="bancos">
+                        <div class="alumno shadow" id="alumno10">😀</div>
+                        <div class="alumno shadow" id="alumno11">😀</div>
+                        <div class="alumno shadow" id="alumno12">😀</div>
+                    </div>
+                </article>
+                <article class="table" id="table3">
+                    <div class="bancosIzquierda">
+                        <div class="alumno shadow" id="alumno13">😀</div>
+                        <div class="alumno shadow" id="alumno14">😀</div>
+                        <div class="alumno shadow" id="alumno15">😀</div>
+                    </div>
+                    <div class="mesa">
+                        <p>Mesa 3</p>
+                        <i class="fas fa-sort-down icono"></i>
+                    </div>
+                    <div class="bancosUlt">
+                    </div>
+                </article>
+            </section>
+
+            <div class="row mt-2" id="boton">
+                <div class="col-12 text-center">
+                    <button class="btn btn-ordenar" id="btn" onclick="ubicar()">Ordenar!</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

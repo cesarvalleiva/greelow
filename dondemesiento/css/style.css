@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(151, 189, 46);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+h1 {
+  color: rgb(20, 27, 45);
+}
+
+header img {
+  width: 80px;
+}
+
+.fila {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 33%;
+  display: flex;
+}
+
+.mesa {
+  width: 58%;
+  height: 400px;
+  background-color: rgb(20, 27, 45);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.alumno {
+  width: 95%;
+  height: 30%;
+  /* background-color: rgb(189, 189, 189); */
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.bancos {
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bancosIzquierda {
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.bancosUlt {
+  width: 21%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 7px;
+}
+
+.alumnoUlt {
+  width: 95%;
+  height: 30%;
+  /* background-color: rgb(189, 189, 189); */
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  text-align: center;
+  margin-bottom: 13px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.btn-ordenar {
+  background-color: rgb(20, 27, 45);
+  color: #fff;
+  padding: 7px 30px;
+}
+
+.btn-ordenar:hover {
+  background-color: #fff;
+  color: rgb(20, 27, 45);
+  border: 1px solid rgb(20, 27, 45);
+}
+
+.btn-ordenar:visited {
+  background-color: rgb(20, 27, 45);
+  color: #fff;
+  padding: 7px 30px;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(20, 27, 45); */
+  background-color: rgb(151, 189, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: smooth 1s ease-out;
+  -moz-animation: smooth 1s ease-out;
+  -o-animation: smooth 1s ease-out;
+  -ms-animation: smooth 1s ease-out;
+  animation: smooth 1s ease-out;
+}
+
+@-webkit-keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ocultar {
+  display: none;
+}
+
+.icono {
+  position: absolute;
+  bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  header {
+    margin: 10px 0;
+  }
+
+  .fila {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .alumno,
+  .alumnoUlt {
+    font-size: 13px;
+  }
+
+  .btn-ordenar {
+    margin-bottom: 30px;
+  }
+}
